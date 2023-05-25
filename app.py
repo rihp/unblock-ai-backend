@@ -30,6 +30,7 @@ app = Flask(__name__)
 
 @app.route('/ask', methods=['POST'])
 def ask_question():
+    print('hello there')
     data = request.get_json()
     prompt = data['question']
 
