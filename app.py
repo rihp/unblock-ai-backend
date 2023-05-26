@@ -46,5 +46,10 @@ def ask_question():
     answer = result['answer']
     return jsonify({"answer": answer})
 
+
+@app.route('/hola')
+def hola():
+    return 'hola'
+
 if __name__ == '__main__':
     app.run()
